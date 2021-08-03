@@ -5,12 +5,6 @@
 
 
 :root {
-  --borders-backgrounds-green: #92cccd;
-  --header-grey: #31343d;
-  --body-whitesmoke: #eeeef6;
-  --maintext-borders-darkslateblue: #445876;
-  --work-contact-text-darkslategrey: #333540;
-
   --adidas-grey: hsl(337, 0%, 73%);
   --adidas-green: hsl(175, 66%, 76%);
   --adidas-purple: hsl(296, 36%, 40%);
@@ -18,14 +12,26 @@
   --adidas-black: hsl(300, 0%, 15%);
   --adidas-dark-purple:hsl(276, 47%, 23%);
   --adidas-white: hsl(255, 45%, 98%);
-  --border-radius-1: 8px;
-  --box-shadow-1: 3px 3px 3px #333540;
-
   --nav-logo-initials-bg:#58f8f2;
+  
+  /* nav */
+  --nav-background: hsl(276, 47%, 23%);
+  /* carousel */
+  --carousel-body-background:hsl(276, 47%, 23%);
+  --carousel-body-color:#fff;
+  /* connect */
+  --connect-icon:hsl(276, 47%, 23%);
+  /* footer */
+  --footer-background:hsl(276, 47%, 23%);
+  --footer-color:#fff;
 }
 
 body {
   font-family: 'Catamaran', sans-serif;
+}
+
+.navbar {
+  background-color: var(--nav-background);
 }
 
 #navLogo {
@@ -34,13 +40,13 @@ body {
 }
 
 #navLogoInitials {
-  background-color: var(--nav-logo-initials-bg);
+  /* background-color: var(--nav-logo-initials-bg); */
 }
 
 .carousel-item {
   height: 730px;
   text-align: center;
-  background-color: rgb(95, 40, 40);
+  /* background-color: transparent; */
 }
 
 .carousel-image1,
@@ -51,7 +57,7 @@ body {
   background-size:cover;
   background-repeat: no-repeat;
   background-position-x: center;
-  height: 500px;
+  height: 450px;
 }
 
 .carousel-image1 {
@@ -82,59 +88,39 @@ body {
 }
 
 /* MAIN BODY */
-
-#hero {
-  display: flex;
-  height: 400px;
+.jumbotron {
+  color: black;
   background-image: url("../images/glitchbpopacity78.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center;
   background-position-y: 25%;
-  align-items: flex-end;
-  justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
 }
 
 #connect {
   
 }
 
-/* PREVENT PHONE # FROM WRAPPING */
 .nowrap {
   white-space: nowrap;
 }
 
+.connect-icon {
+  color: var(--connect-icon);
+}
+
+.carousel-body {
+  background-color: var(--carousel-body-background);
+  color: var(--carousel-body-color);
+}
+
+.footer {
+  background-color: var(--footer-background);
+  color: var(--footer-color);
+}
+
 /* RESUME PAGE */
-
-#resume-page-main {
-  display: flex;
-}
-
 #resume-frame {
-  width: 90%;
   height: 90vh;
-  margin: 30px auto;
-  border: 8px solid var(--maintext-borders-darkslateblue);
-  border-radius: 7px;
-}
-
-#downloadPDF a {
-  margin: 10px;
-  padding: 16px 8px 3px 8px;
-  color: var(--work-contact-text-darkslategrey);
-  text-decoration: none;
-  border-radius: 7px;
-}
-
-#downloadPDF a:hover {
-  cursor: pointer;
-  background-color: var(--borders-backgrounds-green);
-  transition: 0.3s all ease;
-}
-
-footer {
-  height: 80px;
-  background-color: var(--borders-backgrounds-green);
-  padding: 30px;
-  clear: both;
-  text-align: center;
 }
