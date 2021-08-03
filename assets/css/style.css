@@ -5,29 +5,28 @@
 
 
 :root {
-  --adidas-grey: hsl(337, 0%, 73%);
-  --adidas-green: hsl(175, 66%, 76%);
-  --adidas-purple: hsl(296, 36%, 40%);
-  --adidas-dark-grey: hsl(337, 0%, 63%);
-  --adidas-black: hsl(300, 0%, 15%);
-  --adidas-dark-purple:hsl(276, 47%, 23%);
-  --adidas-white: hsl(255, 45%, 98%);
-  --nav-logo-initials-bg:#58f8f2;
-  
+  --body-background:#fff;
   /* nav */
-  --nav-background: hsl(276, 47%, 23%);
+  --nav-background: hsl(220, 29%, 31%);
   /* carousel */
-  --carousel-body-background:hsl(276, 47%, 23%);
-  --carousel-body-color:#fff;
+  /* --carousel-body-background:hsl(53, 18%, 88%);
+  --carousel-body-background:hsl(0, 0%, 94%); */
+  --carousel-body-background:hsl(222, 11%, 94%);
   /* connect */
-  --connect-icon:hsl(276, 47%, 23%);
-  /* footer */
-  --footer-background:hsl(276, 47%, 23%);
-  --footer-color:#fff;
+  --connect-icon:var(--nav-background);
+}
+
+.btn-dark {
+  background-color: var(--nav-background);
+}
+
+.btn-dark:hover {
+  background-color: hsl(220, 29%, 41%);
 }
 
 body {
   font-family: 'Catamaran', sans-serif;
+  background-color: var(--body-background);
 }
 
 .navbar {
@@ -80,13 +79,6 @@ body {
   background-image: url("/assets/images/teamProfileGenerator.jpg");
 }
 
-
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color:var(--adidas-purple);
-}
-
 /* MAIN BODY */
 .jumbotron {
   color: black;
@@ -96,14 +88,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
-}
-
-#connect {
-  
-}
-
-.nowrap {
-  white-space: nowrap;
 }
 
 .connect-icon {
@@ -116,8 +100,8 @@ body {
 }
 
 .footer {
-  background-color: var(--footer-background);
-  color: var(--footer-color);
+  background-color: var(--nav-background);
+  color: #acb1bd;
 }
 
 /* RESUME PAGE */
