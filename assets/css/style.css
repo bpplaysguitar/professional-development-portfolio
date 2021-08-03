@@ -94,6 +94,10 @@ body {
   color: var(--connect-icon);
 }
 
+.connect-icon:hover {
+  color: hsl(220, 29%, 41%);
+}
+
 .carousel-body {
   background-color: var(--carousel-body-background);
   color: var(--carousel-body-color);
