@@ -124,3 +124,22 @@ body {
 #resume-frame {
   height: 90vh;
 }
+
+@media screen and (max-width:768px) {
+  .carousel-item {
+    height: 530px;
+    text-align: center;
+    /* background-color: transparent; */
+  }
+  
+  .carousel-image1,
+  .carousel-image2,
+  .carousel-image3,
+  .carousel-image4,
+  .carousel-image5 {
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 250px;
+  }
+}
