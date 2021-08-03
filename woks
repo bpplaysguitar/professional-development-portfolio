@@ -1,0 +1,78 @@
+      <section class="flex-container" id="work">
+        <div class="heading">
+          <h2>Work</h2>
+        </div>
+        <div class="main-content work-flex-container">
+          <div id="work-grid-container-top">
+            
+
+            <a
+              href="https://www.youtube.com/watch?v=eCcu1BVvk48"
+              target="_blank"
+              id="work-teamProfileGenerator"
+            >
+              <div class="work-text">
+                <h4>Team Profile Generator</h4>
+                <p>HTML/CSS/JS/Node.js</p>
+              </div>
+            </a>
+            <a
+              href="https://manage-me-now.herokuapp.com/login"
+              target="_blank"
+              id="work-1"
+            >
+              <div class="work-text">
+                <h4>Manage Me Now</h4>
+                <p>HTML/CSS/Bootstrap/JS/MySQL/Node.js/Sequelize</p>
+              </div>
+            </a>
+
+          </div>
+          <div id="work-grid-container-bottom">
+            <a
+              href="https://bpplaysguitar.github.io/javascript-fundamentals-quiz/"
+              target="_blank"
+              class="work-small"
+              id="work-2"
+            >
+              <div class="work-text">
+                <h4>JS Fundamentals Quiz</h4>
+                <p>JS/Local Storage</p>
+              </div>
+            </a>
+            <a
+              href="https://youtu.be/LCw-eFKa3BY"
+              target="_blank"
+              class="work-small"
+              id="work-3"
+            >
+              <div class="work-text">
+                <h4>README Generator</h4>
+                <p>JS/Node.js</p>
+              </div>
+            </a>
+            <a
+              href="https://bpplaysguitar.github.io/Bike2Work/"
+              target="_blank"
+              class="work-small"
+              id="work-4"
+            >
+              <div class="work-text">
+                <h4>Bike2Work</h4>
+                <p>JS/Local Storage/API</p>
+              </div>
+            </a>
+            <a
+              href="https://bpplaysguitar.github.io/random-password-generator/"
+              target="_blank"
+              class="work-small"
+              id="work-5"
+            >
+              <div class="work-text">
+                <h4>Password Generator</h4>
+                <p>JS</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>

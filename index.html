@@ -4,171 +4,387 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brian Palay Development Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <title>Brian Palay | Development Portfolio</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.0/examples/carousel/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="/docs/5.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- Font Awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/bpLogo.png" />
+    <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   </head>
+
   <body>
     <header>
-      <h1><a href="./index.html">Brian Palay</a></h1>
-      <nav>
-        <ul id="main-nav">
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="resume.html#resume-frame">Resume</a></li>
-        </ul>
+      <!-- Header -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand ms-3" id="navLogo" href="/index.html"
+            ><span
+              id="navLogoInitials"
+              class="rounded-circle text-dark px-2 py-0"
+              >BP</span
+            ><span id="navLogoName" class="mx-3">Brian Palay</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-4" id="navbarNav">
+            <ul class="navbar-nav">
+              <!-- Home -->
+              <li class="nav-item">
+                <a class="nav-link ms-4 hov-white" href="./index.html"
+                  ><i class="me-1 bi bi-house-door"></i>Home</a
+                >
+              </li>
+              <!-- About -->
+              <li class="nav-item">
+                <a class="nav-link ms-4 hov-white" href="#about"
+                  ><i class="me-1 bi bi-image"></i>About</a
+                >
+              </li>
+              <!-- Work -->
+              <li class="nav-item">
+                <a class="nav-link ms-4" href="#work"
+                  ><i class="me-1 bi bi-image"></i>Work</a
+                >
+                <!-- Nav options if logged in -->
+                <!-- Log out -->
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link ms-4" href="#connect">
+                  <i class="me-1 fas fa-users"></i>Connect</a
+                >
+              </li>
+              <!-- Resume -->
+              <li class="nav-item">
+                <a class="nav-link ms-4" href="resume.html#resume-frame"
+                  ><i class="me-1 far fa-file-alt"></i>Resume</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
+      <!-- <a class="navbar-brand ms-3" id="navLogo" href="/index.html"><span id="navLogoInitials"
+      class="border border-2 rounded-circle bg-dark text-white px-2 py-0">BP</span></a> -->
     </header>
-    <main class="main-body">
+    <main class="container">
       <div id="hero">
-        <h3>Web Developer</h3>
       </div>
-      <section class="flex-container" id="aboutme">
-        <div class="heading">
-          <h2>
-            About
-          </h2>
-        </div>
-        <div class="main-content">
-          <p>
-            My name is Brian Palay, and I'm a web developer. More than that, I'm a creative mind. I've been writing and playing music for most of my life, having been a part of the music communities in Minneapolis and Nashville. Music has been keeping my creativity active my whole life.
-          </p>
-
-          <p>
-            I graduated from the University of Minnesota with a Bachelor of Arts in architecture. My work after that includes many years in the e-commerce content administration space, which saw me regularly working with product photography, graphic design, copy writing and SEO, and 3D modeling and rendering of products and retail spaces. I have since found new motivation and excitement applying my creativity and eye for detail to the development world.
-          </p>
-        </div>
+      <section class="my-5" id="bio">
+      <p>
+        My name is Brian Palay. I'm a full-stack web developer with a particular fondness for front-end development and design. I graduated from the University of Minnesota with a B.A. in architecture, and I'm currently studying full-stack web development, also at the Univerity of Minnesota. My work over the years has involved many forms of digital design, including graphic design, product photography, and 3D modeling and rendering.</p>
+      <p>
+        I've always loved creating things - from legos as a kid, to songs in my 15 years as a professional musician. In web development, I see a new and exciting opportunity to put my passion for creating to work.
+      </p>
+        
       </section>
 
-      <section class="flex-container" id="work">
-        <div class="heading">
-          <h2>Work</h2>
+      <div
+        id="myCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="9000"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
         </div>
-        <div class="main-content work-flex-container">
-          <div id="work-grid-container-top">
-            
-
-            <a
-              href="https://www.youtube.com/watch?v=eCcu1BVvk48"
-              target="_blank"
-              id="work-teamProfileGenerator"
-            >
-              <div class="work-text">
-                <h4>Team Profile Generator</h4>
-                <p>HTML/CSS/JS/Node.js</p>
-              </div>
-            </a>
-            <a
-              href="https://bpplaysguitar.github.io/weather-dashboard/"
-              target="_blank"
-              id="work-1"
-            >
-              <div class="work-text">
-                <h4>Weather Dashboard</h4>
-                <p>JS/Local Storage/Luxon/API</p>
-              </div>
-            </a>
-
+        <div class="carousel-inner"  id="work">
+          <!-- Carousel item 1 -->
+          <div class="carousel-item text-white active">
+            <div class="container d-flex flex-column">
+              <div class="carousel-image1 my-3 mx-2 rounded"></div>
+            </div>
+            <div class="row mt-2">
+              <h1>Manage Me Now</h1>
+              <p class="px-5">
+                Manage employees, projects, and tasks. Full-stack application
+                with different options available for managers than regular
+                employees.
+              </p>
+              <p>
+                <a
+                  class="btn btn-lg btn-primary mx-1"
+                  target="_blank"
+                  href="https://manage-me-now.herokuapp.com/login"
+                  >Deployed</a
+                >
+                <a
+                  class="btn btn-lg btn-primary mx-1"
+                  target="_blank"
+                  href="https://github.com/bpplaysguitar/Manage-Me-Now"
+                  >Repository</a
+                >
+              </p>
+            </div>
           </div>
-          <div id="work-grid-container-bottom">
-            <a
-              href="https://bpplaysguitar.github.io/javascript-fundamentals-quiz/"
-              target="_blank"
-              class="work-small"
-              id="work-2"
-            >
-              <div class="work-text">
-                <h4>JS Fundamentals Quiz</h4>
-                <p>JS/Local Storage</p>
-              </div>
-            </a>
-            <a
-              href="https://youtu.be/LCw-eFKa3BY"
-              target="_blank"
-              class="work-small"
-              id="work-3"
-            >
-              <div class="work-text">
-                <h4>README Generator</h4>
-                <p>JS/Node.js</p>
-              </div>
-            </a>
-            <a
-              href="https://bpplaysguitar.github.io/Bike2Work/"
-              target="_blank"
-              class="work-small"
-              id="work-4"
-            >
-              <div class="work-text">
-                <h4>Bike2Work</h4>
-                <p>JS/Local Storage/API</p>
-              </div>
-            </a>
-            <a
-              href="https://bpplaysguitar.github.io/random-password-generator/"
-              target="_blank"
-              class="work-small"
-              id="work-5"
-            >
-              <div class="work-text">
-                <h4>Password Generator</h4>
-                <p>JS</p>
-              </div>
-            </a>
+
+          <!-- Carousel item 2 -->
+          <div class="carousel-item text-white rounded">
+            <div class="container d-flex flex-column">
+              <div class="carousel-image2 my-3 mx-2 rounded"></div>
+            </div>
+            <div class="row mt-2">
+              <h1>Bike2Work</h1>
+              <p class="px-5">
+                Multiple APIs provide a company by stock symbol, and locations
+                within a search radius, for the user to be able to bike to work.
+              </p>
+              <p>
+                <a
+                  class="btn btn-lg btn-primary mx-1"
+                  target="_blank"
+                  href="https://bpplaysguitar.github.io/Bike2Work/"
+                  >Deployed</a
+                >
+                <a
+                  class="btn btn-lg btn-primary mx-1"
+                  target="_blank"
+                  href="https://github.com/bpplaysguitar/Bike2Work"
+                  >Repository</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- Carousel item 3 -->
+          <div class="carousel-item text-white rounded">
+            <div class="container d-flex flex-column">
+              <div class="carousel-image3 my-3 mx-2 rounded"></div>
+            </div>
+            <div class="row mt-2">
+              <h1>README Generator</h1>
+              <p class="px-5">
+                Command line application that uses JavaScript and Node.js to
+                generate a professional README from user input.
+              </p>
+              <p>
+                <a
+                  class="btn btn-lg btn-primary mx-1"
+                  target="_blank"
+                  href="https://youtu.be/S1CyQbMa4A4"
+                  >Demo</a
+                >
+                <a
+                  class="btn btn-lg btn-primary mx-1"
+                  target="_blank"
+                  href="https://github.com/bpplaysguitar/readme-generator"
+                  >Repository</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- Carousel item 4 -->
+          <div class="carousel-item text-white rounded">
+            <div class="container d-flex flex-column">
+              <div class="carousel-image4 my-3 mx-2 rounded"></div>
+            </div>
+            <div class="row mt-2">
+              <h1>Employee Tracker</h1>
+              <p class="px-5">
+                Command line application that uses JavaScript, Node.js and
+                Sequelize to interact with SQL database.
+              </p>
+              <p>
+                <a
+                  class="btn btn-lg btn-primary mx-1"
+                  target="_blank"
+                  href="https://youtu.be/vFqxlpn9C-U"
+                  >Demo</a
+                >
+                <a
+                  class="btn btn-lg btn-primary mx-1"
+                  target="_blank"
+                  href="https://github.com/bpplaysguitar/employeeTracker"
+                  >Repository</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- Carousel item 5 -->
+          <div class="carousel-item text-white rounded">
+            <div class="container d-flex flex-column">
+              <div class="carousel-image5 my-3 mx-2 rounded"></div>
+            </div>
+            <div class="row mt-2">
+              <h1>Team Profile Generator</h1>
+              <p class="px-5">
+                Command line application that uses JavaScript and Node.js to
+                generate an HTML page with team member data from user.
+              </p>
+              <p>
+                <a
+                  class="btn btn-lg btn-primary mx-1"
+                  target="_blank"
+                  href="https://www.youtube.com/watch?v=eCcu1BVvk48"
+                  >Demo</a
+                >
+                <a
+                  class="btn btn-lg btn-primary mx-1"
+                  target="_blank"
+                  href="https://github.com/bpplaysguitar/teamProfileGenerator"
+                  >Repository</a
+                >
+              </p>
+            </div>
           </div>
         </div>
-      </section>
-
-      <section class="flex-container" id="repo-links">
-        <div class="heading">
-          <!-- <h2>Repo Links</h2> -->
-        </div>
-        <div class="main-content">
-
-
-        <h2>Repositories</h2>
-        <ul>
-          <li>
-          <a target="_blank" href="https://github.com/bpplaysguitar/teamProfileGenerator"><i class="fas fa-1x fa-file-code"></i> Team Profile Generator</a>
-          </li>
-          <li>
-          <a target="_blank" href="https://github.com/bpplaysguitar/weather-dashboard"><i class="fas fa-1x fa-file-code"></i> Weather Dashboard</a>
-          </li>
-          <li>
-          <a target="_blank" href="https://github.com/bpplaysguitar/javascript-fundamentals-quiz"><i class="fas fa-1x fa-file-code"></i> JS Fundamentals Quiz</a>
-          </li>
-          <li>
-          <a target="_blank" href="https://github.com/bpplaysguitar/readme-generator"><i class="fas fa-1x fa-file-code"></i> README Generator</a>
-          </li>
-          <li>
-          <a target="_blank" href="https://github.com/bpplaysguitar/Bike2Work"><i class="fas fa-1x fa-file-code"></i> Bike2Work</a>
-          </li>
-          <li>
-          <a target="_blank" href="https://github.com/bpplaysguitar/random-password-generator"><i class="fas fa-1x fa-file-code"></i> Password Generator</a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="flex-container" id="contactme">
-        <div class="heading">
-          <h2>
-            Contact
-          </h2>
-        </div>
-        <div class="main-content">
-          <ul>
-          <li></l><a href="tel:612-202-5710"> <span class="nowrap"><i class="fas fa-2x fa-phone-square"></i> 612-202-5710</span></a></li>
-          <li></l><a href="mailto:brianpalay@gmail.com"><i class="fas fa-2x fa-envelope-square"> </i> brianpalay@gmail.com</a></li>
-          <li></l><a href="https://github.com/bpplaysguitar" target="_blank"><i class="fab fa-2x fa-github-square"></i> GitHub</a></li>
-          <li></l><a href="https://www.linkedin.com/in/brianpalay" target="_blank"><i class="fab fa-2x fa-linkedin"></i> LinkedIn</a></li>
-        </ul>
-        </div>
-      </section>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon rounded-circle p-4"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon rounded-circle p-4"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </main>
-    <footer id="footer">
-      <p><i class="far fa-copyright"></i> 2021 Brian Palay</p>
-    </footer>
+      <!-- Connect/nav/footer -->
+      <nav class="mt-5 py-5 bg-info navbar navbar-light d-flex flex-row justify-content-center" id="connect">
+        <div class="row container">
+          <div class="col-12">
+            <ul class="nav row text-center d-flex">
+              <li class="nav-item col-4 my-2 nowrap d-flex flex-row justify-content-center align-items-center"> <h4> <i class="me-1 far fa-copyright"></i>2021 Brian Palay
+              </h4></li>
+              <li class="nav-item col-2 my-2">
+                <a class="text-decoration-none nowrap" href="https://github.com/bpplaysguitar" target="_blank"
+                  ><i class="fab fa-3x fa-github-square"></i></a
+                >
+              </li>
+              <li class="nav-item col-2 my-2">
+                <a class="text-decoration-none nowrap" href="https://www.linkedin.com/in/brianpalay" target="_blank"
+                  ><i class="fab fa-3x fa-linkedin"></i></a
+                >
+              </li>
+              <li class="nav-item col-2 my-2">
+                <a class="text-decoration-none nowrap" href="tel:612-202-5710">
+                  <i class="fas fa-3x fa-phone-square"></i></a
+                >
+              </li>
+              <li class="nav-item col-2 my-2">
+                <a class="text-decoration-none nowrap" href="mailto:brianpalay@gmail.com"
+                  ><i class="fas fa-3x fa-envelope-square"> </i></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
