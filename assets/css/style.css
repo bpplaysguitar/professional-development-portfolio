@@ -108,6 +108,10 @@ body {
   color: #acb1bd;
 }
 
+.nowrap {
+  word-wrap: nowrap;
+}
+
 /* RESUME PAGE */
 #resume-frame {
   height: 90vh;
