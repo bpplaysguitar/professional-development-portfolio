@@ -56,7 +56,7 @@ body {
   background-size:cover;
   background-repeat: no-repeat;
   background-position-x: center;
-  height: 450px;
+  height: 500px;
 }
 
 .carousel-image1 {
@@ -132,6 +132,6 @@ body {
     background-size:cover;
     background-repeat: no-repeat;
     background-position-x: center;
-    height: 270px;
+    height: 345px;
   }
 }
