@@ -22,11 +22,12 @@ https://bpplaysguitar.github.io/professional-development-portfolio/
 ![GitHub repo stars](https://img.shields.io/github/stars/bpplaysguitar/professional-development-portfolio?color=8B00FF&logo=GitHub&logoColor=8B00FF&style=for-the-badge)
 
 ## Description
+I was able to put what I've learned so far to work in updating my professional portfolio website. I enjoyed using Bootstrap to style much of it this time, unlike the first iteration of my portfolio website which was just plain CSS.
 
-This project was a useful exercise in practicing my CSS skills in order to be able to replicate a design given to me, as I would see in a workplace from a UX designer. It also brings with it the usefulness beyond homework of being a portfolio in which to put my favorite projects as I progress through coding boot camp. For now, I used one of my favorites from my independent studies before boot camp as a placeholder since I am sure my favroite projects are yet to come in the following months and will be added to this portfolio as I go, along with some customizing of colors and styles to make it own.
 
 ## Technologies Used
 HTML <br>
+Bootstrap <br>
 CSS <br>
 
 
