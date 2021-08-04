@@ -115,7 +115,7 @@ body {
 
 @media only screen and (max-width:768px) {
   .carousel-item {
-    height: 590px;
+    height: 580px;
     text-align: center;
     /* background-color: transparent; */
   }
@@ -128,6 +128,6 @@ body {
     background-size:cover;
     background-repeat: no-repeat;
     background-position-x: center;
-    height: 280px;
+    height: 270px;
   }
 }
